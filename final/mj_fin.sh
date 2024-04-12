@@ -11,10 +11,10 @@ rm -f /home/blake/Desktop/final/album_covers/*.JPEG
 ./clearFiles.sh
 
 # Need to run the script to get the hardware id of the pi
-cd /home/blake/Desktop/final/python_scripts
+cd /python_scripts
 python3 hardware_id.py
 
-cd /home/blake/Desktop/final/python_scripts
+
 
 
 # Runs all the controller polling
@@ -25,7 +25,7 @@ python3 buttons.py&
 
 # Function to run sfml script
 run_cpp_program() {
-    cd /home/blake/Desktop/final/sfml_programs
+    cd /sfml_programs
     g++ -c main2_v3.cpp
     g++ main2_v3.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system
     ./sfml-app
@@ -42,21 +42,23 @@ cleanup()
 
 
 # Run welcome screen
-cd /home/blake/Desktop/final/sfml_programs
+cd ..
+cd /sfml_programs
 g++ -c welcomeScreen.cpp
 g++ welcomeScreen.o -o sfml-welcome -lsfml-graphics -lsfml-window -lsfml-system
 ./sfml-welcome
 
-cd /home/blake/Desktop/final/
+cd ..
 ./clearFiles.sh
 
+
 # Run queue handling (so that the first song is always in there when started)
-cd /home/blake/Desktop/final/python_scripts
+cd /python_scripts
 python3 main.py  &
 
 # Sleep to handle queue from the start
 # sleep 15
-
+cd ..
 run_cpp_program &
 
 
