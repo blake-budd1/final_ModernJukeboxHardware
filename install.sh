@@ -15,3 +15,7 @@ sudo apt-get install libsfml-dev
 sudo apt-get install cec-utils
 sudo apt-get install xdotool
 
+chmod +x final/modernJukebox.sh
+chmod +x final/clearFiles.sh
+chmod +x final/cecremote.sh
+
