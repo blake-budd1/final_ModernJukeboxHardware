@@ -15,5 +15,3 @@ sudo apt-get install libsfml-dev
 sudo apt-get install cec-utils
 sudo apt-get install xdotool
 
-# Create the necessary files for file storage on the device
-# Add this back eventually if we need it
