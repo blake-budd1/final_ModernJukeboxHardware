@@ -1,12 +1,6 @@
 #!/bin/bash
 
-#rm -f /home/blake/Desktop/testing/temp_files/*.txt
-rm -f /home/blake/Desktop/final/album_covers/*.JPEG
-# cd temp_files
-# > current_sleep.txt
-# > current_song.txt
-# > previous_song.txt
-# > next_song.txt
+rm -f /album_covers/*.JPEG
 
 ./clearFiles.sh
 
