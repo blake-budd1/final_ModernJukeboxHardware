@@ -13,3 +13,8 @@ This will install all dependencies needed to successfully run the package. </p>
 
 <p> Once this is done, the user can then use the main bash script to start the program and will not have to interact with it at all afterwards. </p>
 <h5>To run the program, use the following command in the command line on the raspberry pi: ./modern_jukebox.sh</h5>
+
+<h4> How the program works </h4>
+<p> The program is to be used with a front-end website: https://the-modern-jukebox-react-app.vercel.app/</p>
+<p> The user will be able to add songs, join sessions, and create new sessions using that website.</p>
+<p> The hardware section is to be plugged into speakers and a display (using an HDMI connection) to allow the user to display the queue and use either the buttons, remote, or website to control the playback and handle skipping, pausing, playing, or going to the previous song</p>
