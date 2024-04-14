@@ -42,9 +42,15 @@ bool getRemote()
     }
     if(line == "play")
     {
+        std::ofstream clear_file("../temp_files/remote.txt",std::ios::out | std::ofstream::trunc);
+        std::cout << "Cleared remote file in welcome screen. \n";
+        clear_file.close();
         return true;
     }
     else
+        std::ofstream clear_file("../temp_files/remote.txt",std::ios::out | std::ofstream::trunc);
+        std::cout << "Cleared remote file in welcome screen. \n";
+        clear_file.close();
         return false;
 }
 
