@@ -7,6 +7,7 @@ This will install all dependencies needed to successfully run the package. </p>
 
 <p> In order to link it to your Spotify account, you first need to go to spotify developer (https://developer.spotify.com/) and create a new app. Make sure to place http://localhost:8080 in "Redirect URIs". The first time this program is ran the user may need to interact with the Raspberry Pi to authenticate this spotify device via the redirect URL. </p>
 <p> Once the app is created, then navigate to settings, and note the client ID and client secret. These need to be added to the text file in the unzipped file structure. </p>
+<p> In the files, navigate to spotify.json and update the client secret, client ID, and device ID here. </p>
 <p> Additionally, once the install script has been ran and the client ID and client secret have been updated. Take a device on the same WIFI network and navigate to the spotify app. From here, change the playback device to 'Raspberrypi (Raspodify)'. 
     Then, navigate to the following page on the Spotify Developer website to get the device id. https://developer.spotify.com/documentation/web-api/reference/get-a-users-available-devices</p>
     <p>Do the option to try on the right side of the screen and you will see the following device named Raspberrypi. Get the device ID and update it in the same file as the Client ID and Client secret.</p>
